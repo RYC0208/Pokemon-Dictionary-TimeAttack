@@ -2,11 +2,11 @@ import React from 'react'
 import MOCK_DATA from '../Mock'
 import PokemonCard from './PokemonCard'
 import styled from 'styled-components';
-const PokemonList = ({ addPokemon, goToDetail }) => {
+const PokemonList = () => {
   return (
     <StContainer>
         {MOCK_DATA.map((pokemon) => (
-            <PokemonCard key={pokemon.id} pokemon={pokemon} isSelected={false} addPokemon={addPokemon} goToDetail={goToDetail}/>
+            <PokemonCard key={pokemon.id} pokemon={pokemon} isSelected={false} />
         ))}
     </StContainer>
   )
